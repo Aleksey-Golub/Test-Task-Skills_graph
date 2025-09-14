@@ -3,6 +3,7 @@ using CodeBase.Infrastructure.Factory;
 using CodeBase.Infrastructure.States;
 using CodeBase.Services.StaticData;
 using CodeBase.UI.Services.Factory;
+using CodeBase.UI.Services.UIController;
 using UnityEngine;
 using VContainer;
 using VContainer.Unity;
@@ -29,6 +30,7 @@ namespace CodeBase.Infrastructure.EntryPoints
             builder.Register<IAssetProvider, AssetProvider>(Lifetime.Singleton);
 
             builder.Register<IUIFactory, UIFactory>(Lifetime.Singleton);
+            builder.Register<IUIController, UIController>(Lifetime.Singleton);
             builder.Register<IGameFactory, GameFactory>(Lifetime.Singleton);
         }
     }

@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d4e0d965244cb499c0a5310056e8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _layoutsRepository: {fileID: 11400000, guid: 83552aa0dfc11b844863e2f3076cda16, type: 2}
 --- !u!114 &555609352
 MonoBehaviour:
   m_ObjectHideFlags: 0

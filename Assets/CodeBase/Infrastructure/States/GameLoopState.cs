@@ -1,19 +1,19 @@
-﻿namespace CodeBase.Infrastructure.States
+﻿using CodeBase.UI.Services.UIController;
+using VContainer;
+
+namespace CodeBase.Infrastructure.States
 {
     public class GameLoopState : IState
     {
-        private readonly GameStateMachine _stateMachine;
+        [Inject] private readonly GameStateMachine _stateMachine;
+        [Inject] private readonly IUIController _uiController;
 
-        public GameLoopState(GameStateMachine stateMachine)
+        public void Enter()
         {
-            _stateMachine = stateMachine;
+            _uiController.Open(WindowId.MainScreen);
         }
 
         public void Exit()
-        {
-        }
-
-        public void Enter()
         {
         }
     }

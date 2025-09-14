@@ -10,9 +10,9 @@ namespace CodeBase.UI.Services.Factory
         
         private readonly IAssetProvider _assets;
         private readonly IStaticDataService _staticData;
-
-        private Transform _uiRoot;
         private readonly IAssetProvider _asset;
+        
+        public Transform UIRoot { get; private set; }
 
         public UIFactory(
             IAssetProvider assets,
@@ -26,8 +26,11 @@ namespace CodeBase.UI.Services.Factory
 
         public void CreateUIRoot()
         {
+            if (UIRoot)
+                return;
+            
             GameObject root = _assets.Instantiate(UI_ROOT_PATH);
-            _uiRoot = root.transform;
+            UIRoot = root.transform;
         }
     }
 }
