@@ -247,7 +247,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 105, y: 105}
+  m_SizeDelta: {x: 110, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4294272533339677316
 CanvasRenderer:
@@ -393,8 +393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e526525ff75347d6a69c5e7d1d4fdc30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _learnedColor: {r: 0.5732999, g: 0.9150943, b: 0.5041652, a: 1}
-  _defaultColor: {r: 0.55535775, g: 0.79651153, b: 0.9433962, a: 1}
+  _learnedColor: {r: 0.70980394, g: 0.8431373, b: 0.654902, a: 1}
+  _defaultColor: {r: 0.8078432, g: 0.882353, b: 0.9490197, a: 1}
   _image: {fileID: 4271321227568272994}
   _border: {fileID: 9057513028614490616}
   _nameText: {fileID: 8440865435069717528}
