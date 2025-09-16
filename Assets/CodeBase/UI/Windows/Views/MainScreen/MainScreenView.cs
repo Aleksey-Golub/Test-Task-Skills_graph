@@ -6,18 +6,18 @@ namespace CodeBase.UI.Windows.Views
 {
     public class MainScreenView : LayoutViewBase, IMainScreenView
     {
-        [SerializeField] private Button OpenSkillsButton;
+        [SerializeField] private Button _openSkillsButton;
         
         public event Action OpenSkillsClicked;
 
         private void Awake()
         {
-            OpenSkillsButton.onClick.AddListener(OnOpenClicked);
+            _openSkillsButton.onClick.AddListener(OnOpenClicked);
         }
 
         private void OnDestroy()
         {
-            OpenSkillsButton.onClick.RemoveListener(OnOpenClicked);
+            _openSkillsButton.onClick.RemoveListener(OnOpenClicked);
         }
 
         private void OnOpenClicked()

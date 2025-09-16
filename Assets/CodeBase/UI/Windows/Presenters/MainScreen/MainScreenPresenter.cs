@@ -1,11 +1,14 @@
 using CodeBase.UI.Services.UIController;
 using CodeBase.UI.Windows.Views;
-using UnityEngine;
+using CodeBase.UseCases.SkillTree;
+using VContainer;
 
 namespace CodeBase.UI.Windows.Presenters
 {
     public class MainScreenPresenter : LayoutPresenterBase<IMainScreenView>, IMainScreenPresenter
     {
+        [Inject] private readonly SkillTreeUseCase _skillTreeUseCase;
+        
         public override WindowId WindowId => WindowId.MainScreen;
 
         public override void Initialize()
@@ -24,7 +27,7 @@ namespace CodeBase.UI.Windows.Presenters
 
         private void OnOpenSkillsClicked()
         {
-            Debug.Log($"@@@ OpenSkillsClicked");
+            _skillTreeUseCase.HandleOpenSkillsClicked();
         }
     }
 }

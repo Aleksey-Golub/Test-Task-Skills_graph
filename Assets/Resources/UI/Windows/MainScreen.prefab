@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90dd7cb28943489fa5c21adc33c9e0e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OpenSkillsButton: {fileID: 4291475208911648743}
+  _openSkillsButton: {fileID: 4291475208911648743}
 --- !u!1 &5625558489144374392
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 8558863176737672368}
   - component: {fileID: 4291475208911648743}
   m_Layer: 5
-  m_Name: Open_Skill_Tree_Button
+  m_Name: OpenSkillTreeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -11,19 +11,19 @@ namespace CodeBase.UI.Windows.Presenters
     public abstract class LayoutPresenterBase<TView> : ILayoutPresenter, IInitializable, IDisposable where TView : ILayoutView
     {
         [Inject] protected TView LayoutView;
-        [Inject] private readonly IUIController _controller;
+        [Inject] protected readonly IUIController Controller;
         [Inject] private readonly IUIFactory _uiFactory;
         
         public abstract WindowId WindowId { get; }
         
         public virtual void Initialize()
         {
-            _controller.AddPresenter(this);
+            Controller.AddPresenter(this);
         }
 
         public virtual void Dispose()
         {
-            _controller.RemovePresenter(this);
+            Controller.RemovePresenter(this);
         }
 
         public virtual async UniTask ActivateAsync()

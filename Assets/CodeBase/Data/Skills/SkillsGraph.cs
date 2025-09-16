@@ -103,6 +103,12 @@ namespace CodeBase.Data.Skills
             return openSkills.All(n => visited.Contains(n));
         }
 
+        public void Reset()
+        {
+            _openSkills.Clear();
+            _openSkills.Add(BASE_SKILL);
+        }
+
         public override string ToString()
         {
             return $"Open nodes: {string.Join(", ", _openSkills.OrderBy(x => x))}";
