@@ -1,5 +1,7 @@
 см. Assets/Test task Senior Unity Developer.pdf
 
+**Архитектура**: DI через VContainer, GameStateMachine от K-Syndicate, MVP для UI с useCase для бизнес-логики.
+
 ## **Тестовое задание**
 ## **Senior Unity Developer**
 
